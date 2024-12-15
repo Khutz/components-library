@@ -20,24 +20,11 @@ export default defineConfig({
       fileName: (format) => `khutz-library.${format}.js`,
     },
     rollupOptions: {
-      external: [
-        "react",
-        "react-dom",
-        "lucide-react",
-        "clsx",
-        "tailwind-merge",
-        "class-variance-authority",
-        "tailwindcss-animate",
-      ],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          "lucide-react": "LucideReact",
-          clsx: "clsx",
-          "tailwind-merge": "tailwindMerge",
-          "class-variance-authority": "CVA",
-          "tailwindcss-animate": "tailwindcssAnimate",
         },
       },
     },
